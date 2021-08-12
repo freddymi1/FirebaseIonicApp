@@ -1,19 +1,22 @@
-ion-card{
-    align-items: center;
-    padding: 1rem;
-    transform: translateY(50%);
-    .registerTitle{
-        padding: 2rem;
-        text-align: center;
-        .title{
-            font-weight: 700;
-            font-size: 3rem;
+ion-content{
+    --background: rgb(9, 177, 199);
+    ion-card{
+        align-items: center;
+        padding: 1rem;
+        transform: translateY(50%);
+        .registerTitle{
+            padding: 2rem;
+            text-align: center;
+            .title{
+                font-weight: 700;
+                font-size: 3rem;
+            }
         }
-    }
-    .cardFooter{
-        padding: 2rem 0;
-    }
-    ion-input{
-        border-bottom: 1px solid grey;
+        .cardFooter{
+            padding: 2rem 0;
+        }
+        ion-input{
+            border-bottom: 1px solid grey;
+        }
     }
 }
