@@ -1,0 +1,30 @@
+<ion-content class="ion-padding">
+  <ion-card>
+    <div class="registerTitle">
+      <ion-label class="title">Registration</ion-label>
+    </div>
+    <form>
+      <ion-list lines="none">
+        <ion-item>
+          <ion-label position="stacked">Nom et prenom</ion-label>
+          <ion-input required type="text" [(ngModel)]="name" name="name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Adresse email</ion-label>
+          <ion-input required type="email" [(ngModel)]="email" name="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Numero telephone</ion-label>
+          <ion-input required type="tel" [(ngModel)]="phone" name="phone"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Mot de passe</ion-label>
+          <ion-input required type="password" [(ngModel)]="password" name="password"></ion-input>
+        </ion-item>
+        <div class="cardFooter">
+          <ion-button type="submit" expand="block" shape="round" (click)="register()">S'inscrire</ion-button>
+        </div>
+      </ion-list>
+    </form>
+  </ion-card>
+</ion-content>
