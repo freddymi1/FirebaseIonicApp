@@ -1,30 +1,54 @@
 <ion-content>
-  <ion-card>
-    <div class="registerTitle">
-      <ion-label class="title">Registration</ion-label>
+  <div class="btnBack">
+    <ion-button color="light" fill="clear" routerLink="/login">
+      <ion-icon class="iconBack" color="light" name="arrow-back"></ion-icon>
+      Deja inscrit?
+    </ion-button>
+  </div>
+  <div class="logo">
+    <ion-icon color="light" name="speedometer"></ion-icon>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <h1 class="title">Bienvenue</h1>
+      <p>S'inscrire avant de continuer</p>
     </div>
-    <form>
-      <ion-list lines="none">
+    <div class="card-content">
+      <form>
         <ion-item>
-          <ion-label position="stacked">Nom et prenom</ion-label>
-          <ion-input required type="text" [(ngModel)]="name" name="name"></ion-input>
+          <ion-label color="light" position="floating">Nom et prenom</ion-label>
+          <ion-input color="light" required type="text" [(ngModel)]="name" name="name"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="stacked">Adresse email</ion-label>
-          <ion-input required type="email" [(ngModel)]="email" name="email"></ion-input>
+          <ion-label color="light" position="floating">Adresse email</ion-label>
+          <ion-input color="light" required type="email" [(ngModel)]="email" name="email"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="stacked">Numero telephone</ion-label>
-          <ion-input required type="tel" [(ngModel)]="phone" name="phone"></ion-input>
+          <ion-label color="light" position="floating">Numero telephone</ion-label>
+          <ion-input color="light"  required type="tel" [(ngModel)]="phone" name="phone"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="stacked">Mot de passe</ion-label>
-          <ion-input required type="password" [(ngModel)]="password" name="password"></ion-input>
+          <ion-label color="light"  position="floating">Mot de passe</ion-label>
+          <ion-input color="light"  required type="password" [(ngModel)]="password" name="password"></ion-input>
         </ion-item>
-        <div class="cardFooter">
-          <ion-button type="submit" expand="block" shape="round" (click)="register()">S'inscrire</ion-button>
+        
+        <div class="action-button">
+          <ion-button shape="round" color="primary" expand="block" (click)="register()">S'inscrire</ion-button>
         </div>
-      </ion-list>
-    </form>
-  </ion-card>
+        <ion-item lines="none">
+          <ion-label class="text-center" color="light">Ou s'inscrire avec</ion-label>
+        </ion-item>
+        <div class="btnFlex">
+          <ion-button shape="round" >
+            <ion-icon name="logo-facebook" slot="start"></ion-icon>
+            facebook
+          </ion-button>
+          <ion-button class="btnGoogle" shape="round" >
+            <ion-icon name="logo-google" slot="start"></ion-icon>
+            G-mail
+          </ion-button>
+        </div>
+      </form>
+    </div>
+  </div>
 </ion-content>

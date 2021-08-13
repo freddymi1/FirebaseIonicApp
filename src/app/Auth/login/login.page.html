@@ -1,11 +1,42 @@
 <ion-content>
+  <div class="logo">
+    <ion-icon color="light" name="person"></ion-icon>
+  </div>
   <div class="card">
-    <div class="image">
-      <ion-img src="assets/images/face.png"></ion-img>
+    <div class="card-header">
+      <h1 class="title">Bienvenue</h1>
+      <p>Se connecter pour continuer</p>
     </div>
     <div class="card-content">
-      <div class="card-title">
-        <h1 class="ion-no-margin">Authentification</h1>
+      <ion-item>
+        <ion-label color="light" position="floating">Email</ion-label>
+        <ion-input color="light" [(ngModel)]="email" name="email" type="email"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label color="light" position="floating">Mot de passe</ion-label>
+        <ion-input color="light" [(ngModel)]="password" name="password" type="password"></ion-input>
+      </ion-item>
+    
+      <ion-item lines="none">
+        <ion-button class="forgotPass" fill="clear" slot="end" routerLink="/forgot-password">Mot de passe oublie?</ion-button>
+      </ion-item>
+      <ion-button shape="round" color="light" expand="block" fill="outline" type="submit" (click)="login()">Se connecter</ion-button>
+      <br>
+      <ion-button shape="round" expand="block" routerLink="/register">S'inscrire</ion-button>
+    
+      <ion-item lines="none">
+        <ion-label class="text-center" color="light">Ou connectez avec</ion-label>
+      </ion-item>
+      <div class="btnFlex">
+        <ion-button shape="round" >
+          <ion-icon name="logo-facebook" slot="start"></ion-icon>
+          facebook
+        </ion-button>
+        <ion-button class="btnGoogle" shape="round" >
+          <ion-icon name="logo-google" slot="start"></ion-icon>
+          G-mail
+        </ion-button>
       </div>
     </div>
   </div>

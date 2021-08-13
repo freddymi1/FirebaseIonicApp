@@ -1,9 +1,17 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>profile</ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content>
-
+  <ion-list>
+    <ion-item>
+      {{user?.userName}}
+    </ion-item>
+    <ion-item>
+      {{user?.userEmail}}
+    </ion-item>
+    <ion-item>
+      {{user?.userPhone}}
+    </ion-item>
+    <ion-item>
+      {{user?.createdAt | date}}
+    </ion-item>
+  </ion-list>
 </ion-content>

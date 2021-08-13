@@ -1,0 +1,12 @@
+[
+    {
+        "icon": "person",
+        "name": "Mon profile",
+        "redirectTo": "/prifile"
+    },
+    {
+        "icon": "logout",
+        "name": "Deconnecter",
+        "redirectTo": "/login"
+    }
+]
