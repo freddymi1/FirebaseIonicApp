@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
 import { PopoverComponent } from 'src/app/components/popover/popover.component';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,8 @@ import { PopoverComponent } from 'src/app/components/popover/popover.component';
 export class HomePage {
 
   constructor(
-    private ppverCtrl: PopoverController
+    private ppverCtrl: PopoverController,
+    private auth: AuthService
   ) {}
 
   async lanchPopover(events){
