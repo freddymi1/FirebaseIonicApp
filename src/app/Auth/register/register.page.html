@@ -1,9 +1,15 @@
 <ion-content>
-  <div class="btnBack">
-    <ion-button color="light" fill="clear" routerLink="/login">
-      <ion-icon class="iconBack" color="light" name="arrow-back"></ion-icon>
-      Deja inscrit?
-    </ion-button>
+  <div class="header">
+    <ion-buttons>
+      <ion-button routerLink="/profile">
+        <ion-icon slot="icon-only" color="light" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons>
+      <ion-button>
+        <ion-icon slot="icon-only" color="light" name="heart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </div>
   <div class="logo">
     <ion-icon color="light" name="speedometer"></ion-icon>

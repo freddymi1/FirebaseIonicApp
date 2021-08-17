@@ -1,9 +1,43 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>profile-edit</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
+  <div class="header">
+    <ion-buttons>
+      <ion-button routerLink="/profile">
+        <ion-icon slot="icon-only" color="light" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons>
+      <ion-button>
+        <ion-icon slot="icon-only" color="light" name="heart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </div>
+  <div class="logo">
+    <ion-img src="assets\images\face.png"></ion-img>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <h1 class="title">Edit Profile</h1>
+      <p>Modification de mon profile</p>
+    </div>
+    <div class="card-content">
+      <form>
+        <ion-item>
+          <ion-label color="light" position="floating">Nom et prenom</ion-label>
+          <ion-input color="light" required type="text" [(ngModel)]="name" name="name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label color="light" position="floating">Adresse email</ion-label>
+          <ion-input color="light" required type="email" [(ngModel)]="email" name="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label color="light" position="floating">Numero telephone</ion-label>
+          <ion-input color="light"  required type="tel" [(ngModel)]="phone" name="phone"></ion-input>
+        </ion-item>
+        <div class="action-button">
+          <ion-button shape="round" color="primary" expand="block" (click)="updateProfile()">Modifier</ion-button>
+        </div>
+        
+      </form>
+    </div>
+  </div>
 </ion-content>

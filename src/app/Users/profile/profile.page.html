@@ -1,5 +1,4 @@
-
-<ion-content>
+<!-- <ion-content>
   <ion-list>
     <ion-item>
       {{user?.userName}}
@@ -14,4 +13,42 @@
       {{user?.createdAt | date}}
     </ion-item>
   </ion-list>
+
+  <ion-button shap="round" expand="block" (click)="editProfile()">Edit profile</ion-button>
+</ion-content> -->
+
+<ion-content>
+  <div class="header">
+    <ion-buttons>
+      <ion-button routerLink="/home">
+        <ion-icon slot="icon-only" color="light" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons>
+      <ion-button>
+        <ion-icon slot="icon-only" color="light" name="heart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </div>
+
+  <!-- FOOD DETAILS CARD -->
+  <div class="card">
+    <div class="image">
+      <ion-img src="assets\images\face.png"></ion-img>
+    </div>
+    <div class="card-content">
+      <div class="card-title">
+        <h1 class="ion-no-margin name">Profile</h1>
+      </div>
+    </div>
+    <div class="card-content">
+      <app-badge icon="person" text="{{user?.userName}}"></app-badge>
+      <app-badge icon="phone-portrait" text="{{user?.userPhone}}"></app-badge>
+      <app-badge icon="mail-outline" text="{{user?.userEmail}}"></app-badge>
+      <app-badge icon="calendar" text="{{user?.createdAt | date}}"></app-badge>
+    </div>
+
+
+    <app-button shap="round" expand="block" (click)="editProfile()">Edit profile</app-button>
+  </div>
 </ion-content>

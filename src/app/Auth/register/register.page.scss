@@ -4,14 +4,18 @@ ion-content{
     --padding-end: 30px;
     --padding-top: 20px;
     --padding-bottom: 20px;
-    .btnBack{
-        top: 0;
-        
-        .iconBack{
-            margin-right: 3px;
-        }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0.5rem;
+
         ion-button{
-            text-transform: none;
+            height: 60px;
+            height: 60px;
+
+            ion-icon{
+                font-size: 2rem;
+            }
         }
     }
     .card{

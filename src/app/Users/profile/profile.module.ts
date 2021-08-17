@@ -7,13 +7,17 @@ import { IonicModule } from '@ionic/angular';
 import { ProfilePageRoutingModule } from './profile-routing.module';
 
 import { ProfilePage } from './profile.page';
+import { BadgeModule } from 'src/app/components/badge/badge.module';
+import { ButtonModule } from 'src/app/components/button/button.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ProfilePageRoutingModule
+    ProfilePageRoutingModule,
+    BadgeModule,
+    ButtonModule
   ],
   declarations: [ProfilePage]
 })
